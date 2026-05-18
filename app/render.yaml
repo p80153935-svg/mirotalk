@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mirotalk-p2p
+    runtime: node
+    repo: https://github.com/YOUR-USERNAME/mirotalk
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
